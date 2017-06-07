@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'packer --version'
+                sh '/vagrant/packer --version'
                 sh '''
                     echo "Multiline shell steps works too"
                     ls -lah
